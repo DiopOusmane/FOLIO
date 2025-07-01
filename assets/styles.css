@@ -1,3 +1,4 @@
+/* ==================== GÉNÉRAL ==================== */
 * {
     margin: 0;
     padding: 0;
@@ -20,16 +21,7 @@ body {
     padding-left: 60px;
 }
 
-/* header {
-    background-color: #7a1f1f;
-    color: #f5e6ca;
-    padding: 1rem 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-} */
-
+/* ==================== NAVIGATION ==================== */
 nav {
     position: fixed;
     left: 0;
@@ -97,6 +89,7 @@ nav {
     /* box-shadow: 0 2px 8px rgba(0,0,0,0.08); */
 }
 
+/* ==================== SECTIONS ==================== */
 section {
     padding: 5rem 2rem;
     min-height: 100vh;
@@ -107,7 +100,7 @@ section {
 
 .container {
     width: 80%;
-    margin: 0 auto;
+    margin:  auto;
 }
 
 h1,
@@ -131,6 +124,7 @@ h2:after {
     background-color: #7a1f1f;
 }
 
+/* ==================== ACCUEIL ==================== */
 .home {
     background-color: #7a1f1f;
     width: 100%;
@@ -164,6 +158,7 @@ h2:after {
     color: #d9b270;
 }
 
+/* ==================== À PROPOS ==================== */
 .about {
     background-color: #f5e6ca;
 }
@@ -174,6 +169,54 @@ h2:after {
     gap: 32px;
     /* justify-content: center; */
     /* align-items: stretch; */
+}
+.about-contenta {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-contenta .about-text {
+    width: 60%;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(217, 178, 112, 0.3);
+    border-radius: 16px;
+    padding: 0 50px;
+    box-shadow: 0 2px 8px rgba(122,31,31,0.04);
+    height: 500px;
+    margin: auto 0 ;
+    line-height: 1.5;
+    letter-spacing: 0.7px;
+    font-size: 1.1rem;
+}
+
+.about-contenta .about-text p {
+    text-align: justify;
+}
+
+.about-contenta .logo-container {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    height: 500px;
+}
+
+.about-contenta .logo-container img {
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    max-height: none;
+    object-fit: cover;
+    display: block;
+    margin: 0;
 }
 
 .about-text {
@@ -203,12 +246,81 @@ h2:after {
     margin: 1rem 0;
 }
 
+/* ==================== COMPÉTENCES ==================== */
+.skills {
+    /* flex: 1 1 0; */
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 8px;
+    /* background: rgba(217, 178, 112, 0.3); */
+    border-radius: 18px;
+    box-shadow: none;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.logo-banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    padding: 16px 0;
+    background: rgba(245, 230, 202, 0.5);
+    border-radius: 16px;
+    box-shadow: none;
+    margin: 24px auto 40px auto;
+    border-bottom: 2px solid rgba(122,31,31,0.08);
+}
+.logo-banner-inner {
+    display: flex;
+    gap: 33px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.logo-banner img {
+    height: 38px;
+    max-width: 70px;
+    object-fit: contain;
+    filter: grayscale(0.2) drop-shadow(0 1px 2px rgba(0,0,0,0.07));
+    /* background: #fff; */
+    border-radius: 8px;
+    padding: 4px 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.logo-banner img:hover {
+    transform: scale(2) rotate(-2deg);
+    box-shadow: 0 4px 16px rgba(122,31,31,0.10);
+    filter: none;
+    z-index: 2;
+}
+
+.about-contenta .logo-container img {
+    /* max-width: 180px; */
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* ==================== PROJETS ==================== */
 .projects {
     background-color: #e5d6ba;
     /* width: 80%z; */
 }
 
 .project-grid {
+    
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 2rem;
@@ -289,6 +401,7 @@ h2:after {
     text-decoration: none;
 }
 
+/* ==================== CONTACT ==================== */
 .contact {
     background-color: #d9b270;
 }
@@ -299,15 +412,16 @@ h2:after {
     gap: 3rem;
     max-width: 900px;
     margin: 0 auto;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
 }
 
 .contact-info {
     flex: 1 1 0;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 0;
 }
 
@@ -371,6 +485,7 @@ button:hover {
     background-color: #5a1717;
 }
 
+/* ==================== FOOTER ==================== */
 footer {
     background-color: #7a1f1f;
     color: #f5e6ca;
@@ -398,83 +513,7 @@ footer {
     color: #d9b270;
 }
 
-.skills {
-    /* flex: 1 1 0; */
-    min-width: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 24px 8px;
-    /* background: rgba(217, 178, 112, 0.3); */
-    border-radius: 18px;
-    box-shadow: none;
-    max-height: 90vh;
-    overflow-y: auto;
-}
-
-.skill-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-    margin-top: 1rem;
-}
-
-@keyframes bounce {
-
-    0%,
-    20%,
-    50%,
-    80%,
-    100% {
-        transform: translateY(0);
-    }
-
-    40% {
-        transform: translateY(-20px);
-    }
-
-    60% {
-        transform: translateY(-10px);
-    }
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .name {
-        font-size: 3rem;
-    }
-
-    .title {
-        font-size: 1.2rem;
-    }
-
-    nav a {
-        margin: 0 0.8rem;
-        font-size: 1rem;
-    }
-
-    h2 {
-        font-size: 2rem;
-    }
-}
-
-@media (max-width: 900px) {
-    .about-content {
-        flex-direction: column;
-        gap: 18px;
-    }
-    .contact-container {
-        flex-direction: column;
-        gap: 2rem;
-    }
-    .contact-info {
-        align-items: flex-start;
-    }
-}
-
-/* Modal styles */
+/* ==================== MODAL ==================== */
 .modal {
     display: none;
     position: fixed;
@@ -535,7 +574,7 @@ footer {
     margin: 0;
 }
 
-/* Carousel styles */
+/* ==================== CARROUSEL ==================== */
 .carousel {
     position: relative;
     width: 100%;
@@ -622,8 +661,11 @@ footer {
 .modal-tags {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     gap: 0.5rem;
     margin-top: 20px;
+    width: 100%;
 }
 
 .modal-tags .tag {
@@ -637,87 +679,271 @@ footer {
     box-shadow: 0 1px 4px rgba(0,0,0,0.04);
 }
 
-@media (max-width: 768px) {
+/* ==================== ANIMATIONS ==================== */
+@keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-20px);
+    }
+
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 1100px) {
+    .container {
+        width: 95%;
+        padding: 0 8px;
+    }
+    section {
+        padding: 3rem 0.5rem;
+    }
+}
+
+@media (max-width: 900px) {
+    nav {
+        width: 60px;
+    }
+    body {
+        padding-left: 60px;
+    }
+    .nav-logo img {
+        max-width: 50px;
+        max-height: 50px;
+    }
+    .nav-list {
+        gap: 10px;
+    }
+    .nav-list a {
+        font-size: 0.95rem;
+    }
+    .about-contenta {
+        flex-direction: column;
+        gap: 18px;
+    }
+    .about-contenta .about-text,
+    .about-contenta .logo-container {
+        width: 100%;
+        height: auto;
+        min-width: 0;
+        max-width: 100%;
+    }
+    .about-contenta .logo-container img {
+        max-width: 320px;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        object-fit: contain;
+    }
     .modal-content {
         width: 98%;
         margin: 10% auto;
         padding: 12px 4px 16px 4px;
+        max-width: 99vw;
     }
     .carousel-item {
-        height: 220px;
+        height: 180px;
     }
     .carousel-item img {
-        max-height: 200px;
+        max-height: 160px;
     }
     .modal-details h3 {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
+    }
+    .modal-details h4 {
+        font-size: 1rem;
+    }
+    .modal-details ul,
+    .modal-details .modal-list {
+        padding-left: 1.1em;
+        font-size: 0.98em;
+    }
+    .modal-tags {
+        flex-wrap: wrap;
+        gap: 0.3rem;
+        font-size: 0.95em;
+    }
+    .project-grid {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+    .project-card {
+        min-width: 0;
+    }
+    .contact-container {
+        flex-direction: column;
+        gap: 2rem;
+        max-width: 100%;
+    }
+    .contact-info {
+        align-items: flex-start;
+    }
+    .skills {
+        padding: 12px 2px;
+    }
+    .logo-banner {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 8px 0;
+    }
+    .logo-banner-inner {
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+    .logo-banner img {
+        height: 28px;
+        max-width: 40px;
+        padding: 2px 4px;
     }
 }
 
-.logo-banner {
-    max-width: 420Jpx;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    margin: 24px auto 40px auto;
-    border-bottom: 2px solid rgba(122,31,31,0.08);
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 18px;
-    padding: 16px 0;
-    background: rgba(245, 230, 202, 0.5);
-    border-radius: 16px;
-    box-shadow: none;
-}
-.logo-banner::before,
-.logo-banner::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    width: 48px;
-    height: 100%;
-    z-index: 2;
-    pointer-events: none;
-}
-.logo-banner::before {
-    left: 0;
-    background: linear-gradient(to right, rgba(245,230,202,0.9) 60%, rgba(245,230,202,0) 100%);
-    filter: blur(0.5px);
-}
-.logo-banner::after {
-    right: 0;
-    background: linear-gradient(to left, rgba(245,230,202,0.9) 60%, rgba(245,230,202,0) 100%);
-    filter: blur(0.5px);
-}
-.logo-banner-inner {
-    display: flex;
-    gap: 33px;
-    min-width: 100%;
-    animation: scroll-logos 18s linear infinite;
-}
-.logo-banner:hover .logo-banner-inner {
-    animation-play-state: paused;
-}
-@keyframes scroll-logos {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
+@media (max-width: 768px) {
+    .name {
+        font-size: 2.2rem;
+    }
+    .title {
+        font-size: 1rem;
+    }
+    nav a {
+        margin: 0 0.5rem;
+        font-size: 0.95rem;
+    }
+    h2 {
+        font-size: 1.3rem;
+    }
+    .modal-content {
+        width: 99vw;
+        margin: 10% auto;
+        padding: 8px 2px 10px 2px;
+    }
+    .carousel-item {
+        height: 120px;
+    }
+    .carousel-item img {
+        max-height: 100px;
+    }
+    .modal-details h3 {
+        font-size: 1rem;
+    }
+    .modal-details h4 {
+        font-size: 0.9rem;
+    }
+    .modal-details ul,
+    .modal-details .modal-list {
+        font-size: 0.93em;
+    }
+    .modal-tags {
+        font-size: 0.9em;
+    }
+    .skills {
+        padding: 8px 0;
+    }
+    .logo-banner {
+        gap: 8px;
+        padding: 8px 0;
+    }
+    .logo-banner-inner {
+        gap: 10px;
+    }
+    .logo-banner img {
+        height: 28px;
+        max-width: 40px;
+        padding: 2px 4px;
+    }
+    .about-contenta .logo-container img {
+        max-width: 180px;
+    }
+    .project-image {
+        height: 120px;
+    }
+    .contact-form {
+        padding: 1rem;
+    }
+    .form-group {
+        margin-bottom: 1rem;
+    }
+    button {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.95rem;
+    }
+    footer {
+        padding: 1rem 0;
+    }
 }
 
-.logo-banner img {
-    height: 38px;
-    max-width: 70px;
-    object-fit: contain;
-    filter: grayscale(0.2) drop-shadow(0 1px 2px rgba(0,0,0,0.07));
-    /* background: #fff; */
-    border-radius: 8px;
-    padding: 4px 8px;
-    transition: transform 0.2s, box-shadow 0.2s;
-}
-.logo-banner img:hover {
-    transform: scale(1.25) rotate(-2deg);
-    box-shadow: 0 4px 16px rgba(122,31,31,0.10);
-    filter: none;
-    z-index: 2;
+@media (max-width: 600px) {
+    nav {
+        width: 44px;
+    }
+    body {
+        padding-left: 44px;
+    }
+    .container {
+        width: 100vw;
+        padding: 0 2px;
+    }
+    section {
+        padding: 1.2rem 0.2rem;
+    }
+    .modal-content {
+        padding: 2px 1px 4px 1px;
+    }
+    .carousel-item {
+        height: 70px;
+    }
+    .carousel-item img {
+        max-height: 50px;
+    }
+    .modal-details h3 {
+        font-size: 0.9rem;
+    }
+    .modal-details h4 {
+        font-size: 0.8rem;
+    }
+    .modal-details ul,
+    .modal-details .modal-list {
+        font-size: 0.9em;
+    }
+    .modal-tags {
+        font-size: 0.85em;
+    }
+    .project-image {
+        height: 70px;
+    }
+    .contact-form {
+        padding: 0.5rem;
+    }
+    .form-group {
+        margin-bottom: 0.7rem;
+    }
+    button {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+    .logo-banner {
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+        padding: 4px 0;
+    }
+    .logo-banner-inner {
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+    }
+    .logo-banner img {
+        height: 18px;
+        max-width: 28px;
+        padding: 1px 2px;
+    }
 }
