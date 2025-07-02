@@ -13,8 +13,13 @@
 
 <body>
     <header>
+        <div class="burger-menu" id="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <nav>
-
+            <div class="close-burger" id="close-burger">&times;</div>
             <ul class="nav-list">
                 <li><a href="#home">ACCUEIL</a></li>
                 <li><a href="#about">QUI-SUIS JE ?</a></li>
@@ -86,7 +91,6 @@
                                 <img src="assets/Logo/1706463199figma-logo-png.png" alt="Figma" />
                                 <img src="assets/Logo/adobe-logo.svg" alt="Adobe" />
                                 <img src="assets/Logo/Docker-Symbol.png" alt="Docker" />
-
                             </div>
                         </div>
                     </div>
@@ -102,10 +106,11 @@
             <h2>PROJETS</h2>
             <div class="project-grid">
                 <div class="project-card" data-project="1">
-                    <img src="/assets/image/Capture d'écran 2025-07-01 164215.png" alt="Projet 1" class="project-image">
+                    <img src="/assets/image/Capture d'écran 2025-07-01 164215.png" alt="" class="project-image">
                     <div class="project-info">
                         <h3 class="project-title">ClickClick</h3>
-                        <p class="project-desc">ClickClick est un jeu web de rapidité et d’endurance où les joueurs cliquent pour obtenir le meilleur score en un temps limité, avec classement local.</p>
+                        <p class="project-desc">ClickClick est un jeu web de rapidité et d'endurance où les joueurs
+                            cliquent pour obtenir le meilleur score en un temps limité, avec classement local.</p>
                         <div class="project-tags">
                             <span class="tag">HTML</span>
                             <span class="tag">CSS</span>
@@ -168,37 +173,38 @@
         <div class="container">
             <h2>CONTACT</h2>
             <div class="contact-container">
-                    <div class="social-links">
-
-                        <a href="#" class="social-icon"><img src="assets/Logo/linkedin.png" alt="LinkedIn"
-                                style="height: 24px; width: 24px; margin-right: 8px; vertical-align: middle;" />LinkedIn</a>
-                        <a href="#" class="social-icon"><img src="assets/Logo/github.png" alt="GitHub"
-                                style="height: 24px; width: 24px; margin-right: 8px; vertical-align: middle;" />GitHub</a>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <h3>Envoyez-moi un message</h3>
-                    <form action="https://submit-form.com/m9bDVXYQr" method="POST">
-                        <div class="form-group">
-                            <label for="name">Nom</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Sujet</label>
-                            <input type="text" id="subject" name="subject" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" required></textarea>
-                        </div>
-                        <button type="submit">Envoyer</button>
-                    </form>
+                <div class="social-links">
+                    <p>Vous pouvez me contacter via:<a href="https://www.linkedin.com/in/ousmane-diop-0000000000000000000000000000000000000000/" class="social-icon"><img src="assets/Logo/linkedin.png" alt="LinkedIn"
+                        style="height: 24px; width: 24px; margin-right: 8px; vertical-align: middle;" />LinkedIn</a></p>
+                        ou via le formulaire mis a disposition ci-dessous.
+                    <!-- <a href="https://www.linkedin.com/in/ousmane-diop-0000000000000000000000000000000000000000/" class="social-icon"><img src="assets/Logo/linkedin.png" alt="LinkedIn"
+                            style="height: 24px; width: 24px; margin-right: 8px; vertical-align: middle;" />LinkedIn</a> -->
+                    
                 </div>
             </div>
+            <div class="contact-form">
+                <h3>Envoyez-moi un message</h3>
+                <form action="https://submit-form.com/m9bDVXYQr" method="POST">
+                    <div class="form-group">
+                        <label for="name">Nom</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Sujet</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit">Envoyer</button>
+                </form>
+            </div>
+        </div>
         </div>
     </section>
 
@@ -228,7 +234,8 @@
                 </div>
                 <div class="modal-details">
                     <h3>ClickClick</h3>
-                    <p>ClickClick est un jeu web de rapidité et d’endurance où les joueurs cliquent pour obtenir le meilleur score en un temps limité, avec classement local.</p>
+                    <p>ClickClick est un jeu web de rapidité et d'endurance où les joueurs cliquent pour obtenir le
+                        meilleur score en un temps limité, avec classement local.</p>
                     <p>Fonctionnalités principales:</p>
                     <ul>
                         <li>Système d'authentification sécurisé</li>
@@ -310,7 +317,9 @@
                 <div class="modal-details">
                     <h3>InfoCountry</h3>
 
-                    <p>InfoCountry est une application web interactive permettant d'obtenir rapidement des informations détaillées sur tous les pays du monde. Ce projet a vu le jour dans le cadre d'un portfolio personnel pour mettre en avant mes compétences.</p>
+                    <p>InfoCountry est une application web interactive permettant d'obtenir rapidement des informations
+                        détaillées sur tous les pays du monde. Ce projet a vu le jour dans le cadre d'un portfolio
+                        personnel pour mettre en avant mes compétences.</p>
                     <p><strong>Fonctionnalités principales :</strong></p>
                     <ul class="modal-list">
                         <li>Recherche d'un pays par son nom</li>
@@ -360,7 +369,7 @@
                     <h3>PoleS</h3>
                     <p>Refonte du site de l'association PoleS. Ce projet a consisté à moderniser l'identité visuelle et
                         à améliorer l'expérience utilisateur sur Wordpress.</p>
-                        <p><strong>Fonctionnalités principales :</strong></p>
+                    <p><strong>Fonctionnalités principales :</strong></p>
                     <ul class="modal-list">
                         <li>Refonte graphique complète</li>
                         <li>Optimisation de la navigation</li>
