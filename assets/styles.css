@@ -131,7 +131,7 @@ h2:after {
     width: 100%;
     color: #f5e6ca;
     text-align: center;
-    padding-top: 6rem;
+    /* padding-top: 6rem; */
 }
 
 .name {
@@ -189,17 +189,18 @@ h2:after {
     align-items: center;
     background: rgba(217, 178, 112, 0.3);
     border-radius: 16px;
-    padding: 0 50px;
+    padding: 20px;
     box-shadow: 0 2px 8px rgba(122, 31, 31, 0.04);
     height: 500px;
     margin: auto 0;
     line-height: 1.5;
     letter-spacing: 0.7px;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .about-contenta .about-text p {
     text-align: justify;
+    text-justify: auto;
 }
 
 .about-contenta .logo-container {
@@ -236,12 +237,13 @@ h2:after {
     margin: auto 0;
     line-height: 1.5;
     letter-spacing: 0.7px;
-    font-size: 1.1rem;
+    /* font-size: 1.1rem; */
 
 }
 
 .about-text p {
     text-align: justify;
+
 }
 
 .arrow {
@@ -311,6 +313,8 @@ h2:after {
     box-shadow: 0 4px 16px rgba(122, 31, 31, 0.10);
     filter: none;
     z-index: 2;
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(10px);
 }
 
 .about-contenta .logo-container img {
@@ -332,8 +336,7 @@ h2:after {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 2rem;
-    align-self: center;
-    justify-self: center;
+    
 }
 
 .project-card {
@@ -460,7 +463,8 @@ h2:after {
 }
 
 .contact-form {
-    flex: 1 1 0;
+    /* flex: 1 1 0; */
+    
     min-width: 0;
     background-color: white;
     padding: 2rem;
@@ -738,7 +742,7 @@ footer {
 /* ==================== RESPONSIVE ==================== */
 @media (max-width: 1100px) {
     .container {
-        width: 95%;
+        width: 90%;
         padding: 0 8px;
     }
 
@@ -750,6 +754,9 @@ footer {
 @media (max-width: 900px) {
     nav {
         width: 60px;
+    }
+    .container{
+        padding: 15px;
     }
 
     body {
@@ -770,7 +777,7 @@ footer {
     }
 
     .about-contenta {
-        flex-direction: column;
+        flex-direction:column-reverse;
         gap: 18px;
     }
 
@@ -780,10 +787,11 @@ footer {
         height: auto;
         min-width: 0;
         max-width: 100%;
+        font-size: 0.9rem;
     }
 
     .about-contenta .logo-container img {
-        max-width: 320px;
+        max-width: 400px;
         width: 100%;
         height: auto;
         margin: 0 auto;
@@ -791,7 +799,7 @@ footer {
     }
 
     .modal-content {
-        width: 98%;
+        width: 90%;
         margin: 10% auto;
         padding: 12px 4px 16px 4px;
         max-width: 99vw;
@@ -828,6 +836,8 @@ footer {
     .project-grid {
         grid-template-columns: 1fr;
         gap: 1.2rem;
+        align-self: center;
+    justify-self: center;
     }
 
     .project-card {
@@ -860,11 +870,11 @@ footer {
         justify-content: center;
     }
 
-    .logo-banner img {
+    /* .logo-banner img {
         height: 28px;
         max-width: 40px;
         padding: 2px 4px;
-    }
+    } */
 }
 
 @media (max-width: 768px) {
@@ -875,6 +885,7 @@ footer {
     body {
         padding: 0;
     }
+    
 
     .name {
         font-size: 2.2rem;
@@ -947,8 +958,6 @@ footer {
         max-width: 180px;
     }
 
-
-
     .contact-form {
         padding: 1rem;
     }
@@ -974,14 +983,18 @@ footer {
     }
 
     .container {
-        width: 100%;
-        padding: 0 2px;
+        
+        padding: 25px;
     }
 
     section {
         padding: 1.2rem 0.2rem;
     }
-
+    
+    .about-text p{
+        font-size: 0.8rem;
+    }
+    
     .modal-content {
         padding: 2px 1px 4px 1px;
     }
@@ -1002,14 +1015,6 @@ footer {
         font-size: 0.8rem;
     }
 
-    .logo-banner-inner {
-        display: flex;
-        /* flex-direction: column; */
-        /* align-items: center; */
-        flex-wrap: wrap;
-        gap: 10px;
-        /* justify-content: center; */
-    }
 
     .modal-details ul,
     .modal-details .modal-list {
@@ -1025,7 +1030,11 @@ footer {
     } */
 
     .contact-form {
+        align-items: center;
+        justify-content: center;
         padding: 0.5rem;
+        max-width: 100%;
+        
     }
 
     .form-group {
@@ -1045,16 +1054,16 @@ footer {
     }
 
     .logo-banner-inner {
-        flex-direction: column;
+        flex-wrap: wrap;
         align-items: center;
         gap: 6px;
     }
 
-    .logo-banner img {
+    /* .logo-banner img {
         height: 18px;
         max-width: 28px;
         padding: 1px 2px;
-    }
+    } */
 }
 
 /* ===== MENU BURGER ===== */
