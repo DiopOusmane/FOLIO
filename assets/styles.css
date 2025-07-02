@@ -433,7 +433,7 @@ h2:after {
 
 .contact-container {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     gap: 3rem;
     max-width: 900px;
     margin: 0 auto;
@@ -465,7 +465,7 @@ h2:after {
 .contact-form {
     /* flex: 1 1 0; */
     
-    min-width: 0;
+    width: 80%;
     background-color: white;
     padding: 2rem;
     border-radius: 10px;
@@ -531,12 +531,12 @@ footer {
 
 .social-icon {
     font-size: 1.5rem;
-    color: #7a1f1f;
+    color: rgb(0, 0, 0);
     transition: color 0.3s;
 }
 
 .social-icon:hover {
-    color: #d9b270;
+    color:#7a1f1f ;
 }
 
 /* ==================== MODAL ==================== */
@@ -759,9 +759,6 @@ footer {
         padding: 15px;
     }
 
-    body {
-        /* padding-left: 60px; */
-    }
 
     .nav-logo img {
         max-width: 50px;
@@ -1034,7 +1031,7 @@ footer {
         justify-content: center;
         padding: 0.5rem;
         max-width: 100%;
-        
+
     }
 
     .form-group {
