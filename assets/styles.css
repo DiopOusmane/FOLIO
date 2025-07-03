@@ -463,13 +463,16 @@ h2:after {
 }
 
 .contact-form {
-    /* flex: 1 1 0; */
-
     width: 80%;
     background-color: white;
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h3{
+
+    padding-bottom: 20px;
 }
 
 .form-group {
@@ -511,22 +514,13 @@ button:hover {
     background-color: #5a1717;
 }
 
-/* ==================== FOOTER ==================== */
-footer {
-    background-color: #7a1f1f;
-    color: #f5e6ca;
-    text-align: center;
-    padding: 2rem 0;
-}
-
-.social-links {
+.contact-text {
     display: flex;
-
     flex-direction: column;
     /* justify-content: center; */
     align-items: flex-end;
-    gap: 1.5rem;
-    margin: 1.5rem 0;
+    gap: 1rem;
+    padding: 1.5rem 0;
 }
 
 .social-icon {
@@ -538,6 +532,14 @@ footer {
 .social-icon:hover {
     color: #7a1f1f;
 }
+/* ==================== FOOTER ==================== */
+footer {
+    background-color: #7a1f1f;
+    color: #f5e6ca;
+    text-align: center;
+    padding: 2rem 0;
+}
+
 
 /* ==================== ANIMATIONS ==================== */
 @keyframes bounce {
