@@ -313,7 +313,7 @@ h2:after {
     box-shadow: 0 4px 16px rgba(122, 31, 31, 0.10);
     filter: none;
     z-index: 2;
-    background: rgba(255, 255, 255, 0.1); 
+    background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
 }
 
@@ -336,7 +336,7 @@ h2:after {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 2rem;
-    
+
 }
 
 .project-card {
@@ -357,7 +357,7 @@ h2:after {
 }
 
 .project-image {
-    
+
     align-items: center;
     padding: 10px;
     width: 410px;
@@ -464,7 +464,7 @@ h2:after {
 
 .contact-form {
     /* flex: 1 1 0; */
-    
+
     width: 80%;
     background-color: white;
     padding: 2rem;
@@ -536,187 +536,7 @@ footer {
 }
 
 .social-icon:hover {
-    color:#7a1f1f ;
-}
-
-/* ==================== MODAL ==================== */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 2000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    color: #333;
-    background: rgba(0, 0, 0, 0.7);
-    backdrop-filter: blur(3px);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.modal.show {
-    display: flex;
-    opacity: 1;
-    justify-content: center;
-    align-items: center;
-}
-
-.modal-content {
-    background: rgba(255, 255, 255, 0.98);
-    margin: 5% auto;
-    padding: 32px 24px 24px 24px;
-    width: 90%;
-    max-width: 900px;
-    border-radius: 18px;
-    position: relative;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
-    animation: modalIn 0.4s cubic-bezier(.68, -0.55, .27, 1.55);
-}
-
-@keyframes modalIn {
-    0% {
-        transform: scale(0.95) translateY(40px);
-        opacity: 0;
-    }
-
-    100% {
-        transform: scale(1) translateY(0);
-        opacity: 1;
-    }
-}
-
-.close-modal {
-    position: absolute;
-    top: 18px;
-    right: 28px;
-    font-size: 32px;
     color: #7a1f1f;
-    cursor: pointer;
-    z-index: 2100;
-    transition: color 0.2s;
-}
-
-.close-modal:hover {
-    color: #d9b270;
-}
-
-.modal-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-/* ==================== CARROUSEL ==================== */
-.carousel {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    border-radius: 12px;
-    margin-bottom: 24px;
-    background: #f5e6ca;
-    box-shadow: 0 2px 12px rgba(122, 31, 31, 0.08);
-}
-
-.carousel-inner {
-    display: flex;
-    transition: transform 0.5s ease;
-}
-
-.carousel-item {
-    min-width: 100%;
-    height: 400px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.carousel-item img {
-    width: auto;
-    max-width: 100%;
-    max-height: 380px;
-    object-fit: contain;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    background: #fff;
-}
-
-.carousel-control {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: #7a1f1f;
-    color: #fff;
-    border: none;
-    border-radius: 50%;
-    width: 48px;
-    height: 48px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    font-size: 24px;
-    z-index: 10;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
-    transition: background 0.2s, color 0.2s;
-}
-
-.carousel-control:hover {
-    background: #d9b270;
-    color: #7a1f1f;
-}
-
-.carousel-prev {
-    left: 16px;
-}
-
-.carousel-next {
-    right: 16px;
-}
-
-.modal-details {
-    padding: 20px 0 0 0;
-}
-
-.modal-details h3 {
-    color: #7a1f1f;
-    margin-bottom: 15px;
-    font-size: 2rem;
-    letter-spacing: 1px;
-}
-
-.modal-details p {
-    margin-bottom: 15px;
-    line-height: 1.6;
-    font-size: 1.1rem;
-}
-
-.modal-details ul {
-    margin-bottom: 15px;
-    padding-left: 1.2em;
-}
-
-.modal-tags {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-    margin-top: 20px;
-    width: 100%;
-}
-
-.modal-tags .tag {
-    background: #d9b270;
-    color: #7a1f1f;
-    padding: 0.4rem 1rem;
-    border-radius: 50px;
-    font-size: 1rem;
-    font-weight: bold;
-    letter-spacing: 1px;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
 }
 
 /* ==================== ANIMATIONS ==================== */
@@ -755,7 +575,8 @@ footer {
     nav {
         width: 60px;
     }
-    .container{
+
+    .container {
         padding: 15px;
     }
 
@@ -774,7 +595,7 @@ footer {
     }
 
     .about-contenta {
-        flex-direction:column-reverse;
+        flex-direction: column-reverse;
         gap: 18px;
     }
 
@@ -795,46 +616,11 @@ footer {
         object-fit: contain;
     }
 
-    .modal-content {
-        width: 90%;
-        margin: 10% auto;
-        padding: 12px 4px 16px 4px;
-        max-width: 99vw;
-    }
-
-    .carousel-item {
-        height: 180px;
-    }
-
-    .carousel-item img {
-        max-height: 160px;
-    }
-
-    .modal-details h3 {
-        font-size: 1.2rem;
-    }
-
-    .modal-details h4 {
-        font-size: 1rem;
-    }
-
-    .modal-details ul,
-    .modal-details .modal-list {
-        padding-left: 1.1em;
-        font-size: 0.98em;
-    }
-
-    .modal-tags {
-        flex-wrap: wrap;
-        gap: 0.3rem;
-        font-size: 0.95em;
-    }
-
     .project-grid {
         grid-template-columns: 1fr;
         gap: 1.2rem;
         align-self: center;
-    justify-self: center;
+        justify-self: center;
     }
 
     .project-card {
@@ -867,11 +653,7 @@ footer {
         justify-content: center;
     }
 
-    /* .logo-banner img {
-        height: 28px;
-        max-width: 40px;
-        padding: 2px 4px;
-    } */
+
 }
 
 @media (max-width: 768px) {
@@ -882,7 +664,7 @@ footer {
     body {
         padding: 0;
     }
-    
+
 
     .name {
         font-size: 2.2rem;
@@ -901,36 +683,7 @@ footer {
         font-size: 1.3rem;
     }
 
-    .modal-content {
-        width: 99vw;
-        margin: 10% auto;
-        padding: 8px 2px 10px 2px;
-    }
 
-    .carousel-item {
-        height: 120px;
-    }
-
-    .carousel-item img {
-        max-height: 100px;
-    }
-
-    .modal-details h3 {
-        font-size: 1rem;
-    }
-
-    .modal-details h4 {
-        font-size: 0.9rem;
-    }
-
-    .modal-details ul,
-    .modal-details .modal-list {
-        font-size: 0.93em;
-    }
-
-    .modal-tags {
-        font-size: 0.9em;
-    }
 
     .skills {
         padding: 8px 0;
@@ -975,56 +728,20 @@ footer {
 
 @media (max-width: 600px) {
 
-    .project-grid {
-        
-    }
+    .project-grid {}
 
     .container {
-        
+
         padding: 25px;
     }
 
     section {
         padding: 1.2rem 0.2rem;
     }
-    
-    .about-text p{
+
+    .about-text p {
         font-size: 0.8rem;
     }
-    
-    .modal-content {
-        padding: 2px 1px 4px 1px;
-    }
-
-    .carousel-item {
-        height: 70px;
-    }
-
-    .carousel-item img {
-        max-height: 50px;
-    }
-
-    .modal-details h3 {
-        font-size: 0.9rem;
-    }
-
-    .modal-details h4 {
-        font-size: 0.8rem;
-    }
-
-
-    .modal-details ul,
-    .modal-details .modal-list {
-        font-size: 0.9em;
-    }
-
-    .modal-tags {
-        font-size: 0.85em;
-    }
-/* 
-    .project-image {
-        height: 70px;
-    } */
 
     .contact-form {
         align-items: center;
@@ -1075,6 +792,7 @@ footer {
     z-index: 1200;
     margin: 0 0 0 10px;
 }
+
 .burger-menu span {
     display: block;
     width: 28px;
@@ -1089,9 +807,11 @@ footer {
     .burger-menu {
         display: flex;
     }
+
     nav {
         display: none;
     }
+
     body.nav-open nav {
         display: block;
         position: fixed;
@@ -1104,25 +824,33 @@ footer {
         background-image: url(../assets/image/Logo_minimaliste_combinant_les_lettres__O__et__D_____Le__O__est_en_typographie_manuscrite_fluide__élégante_et_artistique__Le__D__est_en_typographie_classique_et_rigide__style_numérique__futuriste__lég\ \(2\).png);
         background-size: 100px;
         background-repeat: no-repeat;
-        background-position:bottom;
+        background-position: bottom;
         z-index: 1100;
-        box-shadow: 2px 0 8px rgba(0,0,0,0.15);
+        box-shadow: 2px 0 8px rgba(0, 0, 0, 0.15);
         animation: slideInNav 0.3s;
     }
+
     body.nav-open .nav-list {
         flex-direction: column;
         gap: 32px;
         align-items: flex-start;
         padding: 60px 24px;
     }
+
     body.nav-open .nav-list li {
         writing-mode: unset;
         transform: none;
     }
 }
+
 @keyframes slideInNav {
-    from { left: -100vw; }
-    to { left: 0; }
+    from {
+        left: -100vw;
+    }
+
+    to {
+        left: 0;
+    }
 }
 
 header {
@@ -1149,6 +877,7 @@ header {
     background: none;
     border: none;
 }
+
 @media (max-width: 768px) {
     body.nav-open .close-burger {
         display: block;
